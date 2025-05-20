@@ -6,7 +6,7 @@ using LokaleBookingSystem.Models;  // Husk at inkludere dit Models namespace
 namespace LokaleBookingSystem.Services
 {
 
-    //ggggg
+    //skole mm
     // BrugerService klasse, der håndterer brugere og login
     public class BrugerService : IBrugerService
     {
