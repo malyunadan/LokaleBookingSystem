@@ -1,0 +1,64 @@
+﻿@page
+@model LokaleBookingSystem.Pages.PrivacyModel
+@{
+    ViewData["Title"] = "Kontakt Zealand Roskilde";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="contact-section">
+    <h2>Kontakt LokaleBooking Support</h2>
+    <p>Hvis du har spørgsmål til lokale-booking, adgang, aflysninger eller systemet generelt, er du velkommen til at kontakte os:</p>
+
+    <h3>Adresse</h3>
+    <p>Zealand - Sjællands Erhvervsakademi</p>
+    <p>Maglegårdsvej 2</p>
+    <p>4000 Roskilde</p>
+
+    <h3>Telefon</h3>
+    <p>+45 7226 6000</p>
+
+    <h3>Email</h3>
+    <p>lokalebooking@zealand.dk</p>
+
+    <h3>Supporttider</h3>
+    <p>Mandag - Fredag: 08:30 - 15:30</p>
+    <p>Lørdag - Søndag: Lukket</p>
+</div>
+
+<a href="/Index" class="btn btn-primary">Tilbage til forsiden</a>
+
+<style>
+    .contact-section {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 6px;
+        text-align: left;
+    }
+
+        .contact-section h2, .contact-section h3 {
+            margin-bottom: 10px;
+        }
+
+        .contact-section p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+    .btn-primary {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+</style>

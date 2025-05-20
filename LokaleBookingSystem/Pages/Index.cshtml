@@ -1,0 +1,61 @@
+﻿@page
+@model LokaleBookingSystemHej.Pages.IndexModel
+@{
+	ViewData["Title"] = "Home Page";
+}
+<body>
+	<h1><b> Lokalebooking</b></h1>
+		<p>Book et ledigt lokale nedenfor</p>
+    <section>
+        <h2>Ledige lokaler</h2>
+        <div class="lokaler">
+            <div class="lokale">
+                <h3>Lokale A </h3>
+                <p>Kapacitet: 30 personer</p>
+            </div>
+            <div class="lokale">
+                <h3>Lokale B </h3>
+                <p>Kapacitet: 4 personer</p>
+            </div>
+
+        
+            <div class="lokale">
+                <h3>Lokale C </h3>
+                <p>Kapacitet: 10 personer</p>
+                <!-- Tilføj flere lokaler her -->
+
+        </div>
+
+    </section>
+
+    <!-- Bookingformular -->
+    <section>
+        <h2>Book et lokale</h2>
+        <form method="post">
+            <div>
+                <label for="Navn">Navn:</label>
+                <input type="text" id="Navn" name="Navn" />
+            </div>
+            <div>
+                <label for="Lokale">Vælg lokale:</label>
+                <select id="Lokale" name="Lokale">
+                    <option value="101">Lokale 101</option>
+                    <option value="202">Lokale 202</option>
+                </select>
+            </div>
+            <div>
+                <label for="Dato">Dato:</label>
+                <input type="date" id="Dato" name="Dato" />
+            </div>
+            <div>
+                <label for="Tid">Tid:</label>
+                <input type="time" id="Tid" name="Tid" />
+            </div>
+            <div>
+                <button type="submit">Send booking</button>
+            </div>
+        </form>
+    </section>
+
+
+</body>

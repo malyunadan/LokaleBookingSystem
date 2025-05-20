@@ -1,0 +1,27 @@
+﻿
+@page
+@model LokaleBookingSystem.Pages.LokaleoversigtModel
+
+@{
+    ViewData["Title"] = "Lokaleoversigt";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.Lokaler != null && Model.Lokaler.Any())
+{
+    <ul>
+        @foreach (var lokale in Model.Lokaler)
+        {
+            <li>
+                <h3>@lokale.Navn</h3>
+ 
+                <a href="@Url.Page("BookLokale", new { id = lokale.Id })">Book dette lokale</a>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Ingen lokaler fundet.</p>
+}
