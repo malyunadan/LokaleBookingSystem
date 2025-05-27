@@ -15,7 +15,7 @@ namespace LokaleBookingSystem.Services
         //Constructor
         //Modtager en liste med lokaler som input.
         //Initialiserer listen over bookinger som tom.
-        // LAVE EN REFFERENCE TIL LOKALE REPO - ROSBIL - USER 
+        // LAVE EN REFFERENCE TIL LOKALE REPO - ROSBIL - 
         public BookingService()
         {
             _bookinger = new List<Booking>();

@@ -4,6 +4,11 @@ namespace LokaleBookingSystem.Services
 {
     public interface IBrugerService
     {
-        Bruger? Login(string brugernavn, int adgangskode);
+       Bruger Login(string brugernavn, String adgangskode);
+    
+      List<Bruger> GetAll();
     }
 }
+
+
+

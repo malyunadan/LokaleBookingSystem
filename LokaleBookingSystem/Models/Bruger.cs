@@ -12,13 +12,13 @@
     {
         public string Id { get; set; }
         public string Brugernavn { get; set; } 
-        public int Adgangskode { get; set; }
+        public String Adgangskode { get; set; }
         public Rolle Rolle { get; set; }
         public string GruppeId { get; set; }
 
         public Bruger() { }
 
-        public Bruger(string brugernavn, string id, int adgangskode, Rolle rolle, string gruppeId)
+        public Bruger(string brugernavn, string id, string adgangskode, Rolle rolle, string gruppeId)
         {
             Brugernavn = brugernavn;
             Id = id;

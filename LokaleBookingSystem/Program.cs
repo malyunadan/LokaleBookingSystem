@@ -1,4 +1,6 @@
+using LokaleBookingSystem.Models;
 using LokaleBookingSystem.Services;
+using LokaleBookingSystemHej.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.DataProtection.Repositories;
 
@@ -17,10 +19,11 @@ builder.Services.AddRazorPages(options =>
 //builder.Services.AddSingleton<IBookingRegler, BookingRegler>();
 //builder.Services.AddSingleton<IBookingService, BookingService>();
 builder.Services.AddSingleton<IBrugerService, BrugerService>();
+builder.Services.AddSingleton<ILokaleRepo, LokaleRepo>();
 
 
 
-
+builder.Services.AddSession();
 //Add Authentication services
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
@@ -32,6 +35,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 var app = builder.Build();
 
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -39,6 +43,9 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+//builder.Services.AddSession();
+app.UseSession();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

@@ -3,59 +3,125 @@
 @{
 	ViewData["Title"] = "Home Page";
 }
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokalebooking</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-	<h1><b> Lokalebooking</b></h1>
-		<p>Book et ledigt lokale nedenfor</p>
-    <section>
-        <h2>Ledige lokaler</h2>
-        <div class="lokaler">
-            <div class="lokale">
-                <h3>Lokale A </h3>
-                <p>Kapacitet: 30 personer</p>
-            </div>
-            <div class="lokale">
-                <h3>Lokale B </h3>
-                <p>Kapacitet: 4 personer</p>
-            </div>
+    <header class="logo-header">
+        <div class="logo">Lokalebooking</div>
+    </header>
 
-        
-            <div class="lokale">
-                <h3>Lokale C </h3>
-                <p>Kapacitet: 10 personer</p>
-                <!-- Tilføj flere lokaler her -->
-
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Book dit lokale<br>hurtigt og nemt</h1>
+            <p>Vores system gør det nemt at finde og<br>reservere ledige lokaler</p>
+            <a href="#" class="cta-button">Book et lokale</a>
         </div>
-
     </section>
-
-    <!-- Bookingformular -->
-    <section>
-        <h2>Book et lokale</h2>
-        <form method="post">
-            <div>
-                <label for="Navn">Navn:</label>
-                <input type="text" id="Navn" name="Navn" />
-            </div>
-            <div>
-                <label for="Lokale">Vælg lokale:</label>
-                <select id="Lokale" name="Lokale">
-                    <option value="101">Lokale 101</option>
-                    <option value="202">Lokale 202</option>
-                </select>
-            </div>
-            <div>
-                <label for="Dato">Dato:</label>
-                <input type="date" id="Dato" name="Dato" />
-            </div>
-            <div>
-                <label for="Tid">Tid:</label>
-                <input type="time" id="Tid" name="Tid" />
-            </div>
-            <div>
-                <button type="submit">Send booking</button>
-            </div>
-        </form>
-    </section>
-
-
 </body>
+</html>
+@* <!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokalebooking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Lokalebooking</div>
+        <nav>
+            <ul>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#">Book et lokale</a></li>
+                <li><a href="#">Min profil</a></li>
+                <li><a href="#">Log ind</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Book dit lokale hurtigt og nemt</h1>
+            <p>Vores system gør det nemt at finde og reservere ledige lokaler</p>
+            <a href="#" class="cta-button">Book et lokale</a>
+        </div>
+    </section>
+</body>
+</html> *@
+
+
+@* @* <!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokalebooking</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    @* <header>
+        <div class="logo">Lokalebooking</div>
+        <nav>
+            <ul>
+                <li><a href="#">Hjem</a></li>
+                <li><a href="#">Book et lokale</a></li>
+                <li><a href="#">Min profil</a></li>
+                <li><a href="#">Log ind</a></li>
+            </ul>
+        </nav>
+    </header> *@
+
+    @* <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Book dit lokale<br>hurtigt og nemt</h1>
+            <p>Vores system gør det nemt at finde og<br>reservere ledige lokaler</p>
+            <a href="#" class="cta-button">Book et lokale</a>
+        </div>
+    </section>
+</body>
+</html> *@
+
+ 
+@* <!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokalebooking – Book nemt dine lokaler</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">📅 Lokalebooking</div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Book dine lokaler smartere!</h1>
+            <p>Et enkelt system til at reservere mødelokaler, undervisningsrum og mere – hurtigt og nemt.</p>
+            <a href="/login" class="btn-primary">Kom i gang</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Lokalebooking. Alle rettigheder forbeholdes.</p>
+        </div>
+    </footer>
+</body>
+</html>
+ *@
+
+

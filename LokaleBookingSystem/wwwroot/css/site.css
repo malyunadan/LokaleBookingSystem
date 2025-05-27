@@ -50,3 +50,378 @@ input, select {
     box-sizing: border-box;
 
 }
+
+
+/*** forside ***/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #ffffff;
+    color: white;
+
+}
+
+.logo-header {
+    background-color: #001f3f; /* mørkeblå */
+    padding: 20px 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #add8e6; /* lyseblå logo tekst */
+}
+
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 31, 63, 0.7); /* mørkeblå overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #add8e6; /* lyseblå overskrift */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #add8e6; /* lyseblå tekst */
+}
+
+.cta-button {
+    background-color: #add8e6; /* lyseblå knap */
+    color: #001f3f; /* mørkeblå tekst på knap */
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+    .cta-button:hover {
+        background-color: #0074cc; /* lidt mørkere blå ved hover */
+        color: white;
+    }
+
+
+
+
+    /*lokaleoversigt*/
+
+.page-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #001f3f;/* mærkeblå*/
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 31, 63, 0.5);
+}
+
+.lokale-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.lokale-item {
+    background-color: #001f3f; /* mørkeblå baggrund */
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 31, 63, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.lokale-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 31, 63, 0.6);
+}
+
+.lokale-navn {
+    font-size: 1.5rem;
+    color: #add8e6;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.btn-book {
+    display: inline-block;
+    background-color: #add8e6; /* lyseblå */
+    color: #001f3f; /* mørkeblå */
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(173, 216, 230, 0.6);
+}
+
+.btn-book:hover {
+    background-color: #0074cc;
+    color: white;
+    box-shadow: 0 6px 20px rgba(0, 116, 204, 0.8);
+}
+
+.no-lokaler {
+    color: #add8e6;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/** {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e2d4f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e2d4f;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1573164713347-df1e9bcd4f29') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: #1e2d4f;
+    padding: 15px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+    .cta-button:hover {
+        background-color: #e6b800;
+    }
+*/
+/* Reset & base styles */
+/** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fbff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}*/
+
+/* Header */
+/*.header {
+    background: #ffffff;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e5eaf0;
+}
+
+    .header .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #007aff;
+    }
+
+    .header nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }*/
+
+/* Hero Section */
+/*.hero {
+    background: linear-gradient(to right, #007aff, #00b8ff);
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+    border-radius: 0 0 40px 40px;
+}
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+
+/* Buttons */
+/*.btn-primary {
+    padding: 0.8rem 1.8rem;
+    background-color: white;
+    color: #007aff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #f0f0f0;
+    }
+
+.btn-outline {
+    padding: 0.5rem 1rem;
+    border: 2px solid #007aff;
+    border-radius: 6px;
+    color: #007aff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-outline:hover {
+        background-color: #007aff;
+        color: white;
+    }*/
+
+/* Footer */
+/*.footer {
+    padding: 2rem 0;
+    background-color: #f1f5fa;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}*/

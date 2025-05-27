@@ -13,16 +13,47 @@
     </div>
     <form method="post">
         <div class="form-group mb-3">
+            <label asp-for="Brugernavn" class="control-label"></label>
+            <input asp-for="Brugernavn" class="form-control" />
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Adgangskode" class="control-label"></label>
+            <input asp-for="Adgangskode" class="form-control" type="password" />
+        </div>
+        <div class="form-group mb-3">
+            <input type="submit" value="Log in" class="btn btn-outline-primary" />
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">
+                @Model.ErrorMessage
+            </div>
+        }
+    </form>
+
+    @*  <div>
+        @Model.ErrorMessage
+    </div>
+    <form method="post">
+        <div class="form-group mb-3">
             <label asp-for="Brugernavn" class="control-label "></label>
             <input asp-for="Brugernavn" class="form-control" />
         </div>
         <div class="form-group mb-3">
             <label asp-for="Adgangskode" class="control-label"></label>
-            <input asp-for="Adgangskode" class="form-control" />
+            <input asp-for="Adgangskode" class="form-control" type="Password" />
         </div>
         <div class="form-group mb-3">
             <input type="submit" value="Log in" class="btn btn-outline-primary" />
         </div>
+        </div>
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">@Model.ErrorMessage
+            </div>
+        }</div>
     </form>
-</div>
+    </div>
 
+ *@
